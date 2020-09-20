@@ -2,9 +2,7 @@
 
 React App to make Heuristics Poster
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=wBMoR_fe6Kc
-" target="_blank"><img src="http://img.youtube.com/vi/wBMoR_fe6Kc/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+[![Youtube Video](http://img.youtube.com/vi/wBMoR_fe6Kc/0.jpg)](http://www.youtube.com/watch?v=wBMoR_fe6Kc)
 
 
 ## Available Scripts
