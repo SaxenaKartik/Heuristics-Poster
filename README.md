@@ -4,26 +4,21 @@ React App to make Heuristics Poster
 
 ## Dependencies 
 
-"react": "^16.13.1",
-    "react-component-export-image": "^0.1.7",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
-
-###`react version(^16.13.1)` 
+### `react version(^16.13.1)` 
 
 To install : `npm install react`
 
 
-###`react-component-export-image version(^0.1.7)` : To export react component is an image or PDF 
+### `react-component-export-image version(^0.1.7)` : To export react component is an image or PDF 
 
 To install : `npm install react-component-export-image`
 
 
-###`react-dom(^16.13.1)` 
+### `react-dom(^16.13.1)` 
 
 To install : `npm install react-dom`
 
-###`react-scripts version(^3.4.3)` 
+### `react-scripts version(^3.4.3)` 
 
 To install : `npm install react-scripts`
 
