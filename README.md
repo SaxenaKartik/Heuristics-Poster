@@ -9,8 +9,9 @@ React App to make Heuristics Poster
 To install : `npm install react`
 
 
-### `react-component-export-image version(^0.1.7)` : To export react component is an image or PDF 
+### `react-component-export-image version(^0.1.7)`
 
+To export react component is an image or PDF 
 To install : `npm install react-component-export-image`
 
 
@@ -23,7 +24,7 @@ To install : `npm install react-dom`
 To install : `npm install react-scripts`
 
 
-####This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
