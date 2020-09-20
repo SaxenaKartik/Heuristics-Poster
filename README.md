@@ -2,8 +2,33 @@
 
 React App to make Heuristics Poster
 
+## Dependencies 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"react": "^16.13.1",
+    "react-component-export-image": "^0.1.7",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+
+###`react version(^16.13.1)` 
+
+To install : `npm install react`
+
+
+###`react-component-export-image version(^0.1.7)` : To export react component is an image or PDF 
+
+To install : `npm install react-component-export-image`
+
+
+###`react-dom(^16.13.1)` 
+
+To install : `npm install react-dom`
+
+###`react-scripts version(^3.4.3)` 
+
+To install : `npm install react-scripts`
+
+
+####This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -17,7 +42,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+<!-- ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -71,3 +96,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ -->
