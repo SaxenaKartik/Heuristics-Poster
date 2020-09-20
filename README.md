@@ -11,7 +11,7 @@ To install : `npm install react`
 
 ### `react-component-export-image version(^0.1.7)`
 
-To export react component is an image or PDF 
+To export react component is an image or PDF <br/>
 To install : `npm install react-component-export-image`
 
 
