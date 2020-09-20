@@ -2,23 +2,14 @@
 
 React App to make Heuristics Poster
 
-## Steps
- 
- 1. Install the dependencies using `npm install`
-
- 2. Start the app using `npm start`
-
-## Dependencies 
-
-### `react-component-export-image version(^0.1.7)`
-
-To export react component is an image or PDF <br/>
-
-#### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs the necessary dependencies for the project to run.<br/>
+This step may take a while if you are performing it the first time
 
 ### `npm start`
 
@@ -27,6 +18,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+## External Dependencies 
+
+### `react-component-export-image version(^0.1.7)`
+
+To export react component is an image or PDF <br/>
+
+#### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 <!-- ### `npm test`
 
