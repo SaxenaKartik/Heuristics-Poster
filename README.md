@@ -25,7 +25,7 @@ You will also see any lint errors in the console.
 
 To export react component is an image or PDF <br/>
 
-#### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
 <!-- ### `npm test`
