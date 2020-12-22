@@ -63,8 +63,8 @@ src: local('link'), url('../fonts/gligoth.ttf');
   font-weight: lighter;
   z-index: -1;
   font-size: 38px;
-  margin-top: -60px;
-  margin-bottom: -20px;
+  margin-top: -40px;
+  /*margin-bottom: -20px;*/
 }
 
 .horizontal{
@@ -114,8 +114,8 @@ src: local('link'), url('../fonts/gligoth.ttf');
 }
 
 .image {
-	width : 90%;
-	height : 60%;
+	width : 80%;
+	height : 100%;
 }
 
 .qr{
@@ -149,11 +149,11 @@ src: local('link'), url('../fonts/gligoth.ttf');
 {
   font-family: 'Acumin Pro', sans-serif;
   font-weight: lighter;
-  display : flex;
-  flex-direction: row;
+  /*display : flex;*/
+  /*flex-direction: row;*/
   text-align: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 16px;
   margin-top: -20px;
   margin-bottom: 0px;
 }
@@ -166,7 +166,7 @@ src: local('link'), url('../fonts/gligoth.ttf');
   justify-content: center;
   align-content: center;
   margin-top: 0px;
-  margin-bottom: 0px;  
+  margin-bottom: 0px;
 }
 
 .vertical{
