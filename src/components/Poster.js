@@ -6,7 +6,6 @@ import logonith from '../images/nith.png'
 function Poster(props) {
     return (
         <div className="book">
-            {/*<ComponentToPrint ref = {ref} data = {props.data}/>*/}
             <div className="page">
 				<span className="horizontal">
 					<img className="logo" src={logo} alt="CSEC logo"/>
@@ -38,13 +37,13 @@ function Poster(props) {
                         <img className="image" src={props.data.file} id="image" alt="Insert Poster"/>}
                 </div>
                 <span className="horizontal">
-					<img className="qr" src={props.data.qr} alt="QR Code"/>
+                    <img className="qr" src={props.data.qr} alt="QR Code"/>
 					<span className="vertical, link">
                         <div>
                             {props.data.url ? props.data.url : "Insert Link"}
                         </div>
-                        <hr className={props.data.contactList.length ? 'rule' : null}/>
-                        <div style={{marginTop: "=10px"}}>
+                        {/*<hr className={props.data.contactList.length ? 'rule' : null}/>*/}
+                        <div style={{marginTop: "10px"}}>
                             <span
                                 className="contacts">{props.data.contactList.length === 1 || props.data.contactList.length === 2 || props.data.contactList.length === 3 || props.data.contactList.length === 4 ?
                                 props.data.contactList.slice(0, 4).map((item) => <div
@@ -55,12 +54,6 @@ function Poster(props) {
                                 ""}
                             </span>
                          </div>
-                        {/*<span>{props.data.contactList.length === 3 || props.data.contactList.length === 4 ?*/}
-                        {/*    props.data.contactList.slice(2, 4).map((item) => <div key={item.id} style={{height: "20px"}}> &nbsp;*/}
-                        {/*        <p>{item.student} &nbsp;:&nbsp; </p><p>{item.contact}</p></div>)*/}
-                        {/*    :*/}
-                        {/*    ""}*/}
-                        {/*</span>*/}
 					</span>
 				</span>
             </div>
