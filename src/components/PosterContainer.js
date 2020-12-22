@@ -127,9 +127,9 @@ function PosterContainer(){
 	  	<div>
 		  	<PosterForm data = {data} handleChange = {handleChange}/>
 		  	{contactInfoList}
-		<button onClick={() => exportComponentAsJPEG(ref, data.iteration?data.iteration : "poster")}>Generate JPEG</button>	
-	  	<button onClick={() => exportComponentAsPNG(ref, data.iteration?data.iteration : "poster")}>Generate PNG</button>	
-	  	<button onClick={() => exportComponentAsPDF(ref, data.iteration?data.iteration : "poster")}>Generate PDF</button>	
+		<button className={"btn btn-primary"} onClick={() => exportComponentAsJPEG(ref, data.iteration?data.iteration : "poster")}>Generate JPEG</button>
+	  	<button className={"btn btn-primary"} onClick={() => exportComponentAsPNG(ref, data.iteration?data.iteration : "poster")}>Generate PNG</button>
+	  	<button className={"btn btn-primary"} onClick={() => exportComponentAsPDF(ref, data.iteration?data.iteration : "poster")}>Generate PDF</button>
 		</div>
   	</div>
   )
