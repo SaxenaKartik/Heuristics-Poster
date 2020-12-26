@@ -17,6 +17,7 @@ function PosterContainer() {
     let [contacts, setContacts] = useState("")
     let [contactList, setContactList] = useState([])
 
+
     async function handleChange(event) {
         let {name, value, files} = event.target
         if (name === "image") {
@@ -112,6 +113,7 @@ function PosterContainer() {
 
     const ref = createRef();
     const style = {display: "flex", flexDirection: "row"}
+    const buttonStyle = {marginRight: "10px", color: "white", backgroundColor: "black"};
     const stylePoster = {width: "70%"}
     const contactInfoList = contactList.map(item => <ContactInformation key={item.id} data={item}
                                                                         contactAdd={contactAdd}/>)
@@ -121,21 +123,40 @@ function PosterContainer() {
                 <div style={stylePoster}>
                     <ComponentToPrint ref={ref} data={data} handleChange={handleChange}/>
                 </div>
-                <div className>
-                    <PosterForm data={data} handleChange={handleChange}/>
-                    {contactInfoList}
-                    <button className={"btn btn-primary"} style={{marginRight: "10px"}}
-                            onClick={() => exportComponentAsJPEG(ref, data.iteration ? data.iteration : "poster")}>Generate
-                        JPEG
-                    </button>
-                    <button className={"btn btn-primary"} style={{marginRight: "10px"}}
-                            onClick={() => exportComponentAsPNG(ref, data.iteration ? data.iteration : "poster")}>Generate
-                        PNG
-                    </button>
-                    <button className={"btn btn-primary"}
-                            onClick={() => exportComponentAsPDF(ref, data.iteration ? data.iteration : "poster")}>Generate
-                        PDF
-                    </button>
+                <div className="row">
+                    <div style={{fontFamily: "monospace", padding: "1rem"}}>
+                        <div
+                            style={{
+                                margin: "0 auto",
+                                width: "500px",
+                                padding: "2rem",
+                                boxShadow: "5px 5px 10px 5px #888888",
+                                borderRadius: "1rem"
+                            }} className={"form-grpup"}>
+                            <div className={"modal-header"}>
+                                <h3>Enter Details</h3>
+                            </div>
+                            <br/>
+                            <PosterForm data={data} handleChange={handleChange}/>
+                            {contactInfoList}
+
+                            <div className={"modal-footer"} style={{textAlign:"center"}}>
+                                <button className={"btn btn-dark"} style={buttonStyle}
+                                        onClick={() => exportComponentAsJPEG(ref, data.iteration ? data.iteration : "poster")}>Generate
+                                    JPEG
+                                </button>
+                                <button className={"btn btn-dark"} style={buttonStyle}
+                                        onClick={() => exportComponentAsPNG(ref, data.iteration ? data.iteration : "poster")}>Generate
+                                    PNG
+                                </button>
+                                <button className={"btn btn-dark"} style={buttonStyle}
+                                        onClick={() => exportComponentAsPDF(ref, data.iteration ? data.iteration : "poster")}>Generate
+                                    PDF
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

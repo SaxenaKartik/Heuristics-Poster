@@ -4,9 +4,6 @@ import '../styleSheets/PosterForm.css'
 function PosterForm(props) {
     return (
         <div className="formContainer">
-            <div className="segment">
-                <h2>Details</h2>
-            </div>
             <form>
                 <div className={"form-group"}>
                     <label className={"form-label"}>

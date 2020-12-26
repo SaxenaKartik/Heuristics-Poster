@@ -25,7 +25,7 @@ src: local('OnProCon'), url('../fonts/miso-light.ttf');
 @font-face {
 font-family: 'link';
 font-style: normal;
-font-weight: lighter;
+font-weight: normal;
 src: local('link'), url('../fonts/gligoth.ttf');
 }
 
@@ -43,7 +43,7 @@ src: local('link'), url('../fonts/gligoth.ttf');
 {
   font-family: 'heuristicsFont', sans-serif;
   font-size: 70px;
-  font-weight: thin;
+  font-weight: 600;
   z-index: 1;
   margin-top: -1px;
   margin-bottom: 5px;
