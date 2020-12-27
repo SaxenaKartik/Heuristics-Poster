@@ -36,12 +36,15 @@ function Poster(props) {
                 <span className="horizontal" style={{marginBottom: "20px"}}>
 					<h1 className="Heuristics" style={style.textStyle}> HEURISTICS </h1>
 					<h4 className="iteration" style={{
-                        marginTop: "10px",
-                        marginLeft: "10px"
-                    }}> #{props.data.iteration ? props.data.iteration : "Insert Iteration"} </h4>
+                        marginLeft: "10px",
+                        fontSize: "20px",
+                    }}> {props.data.iteration ? <span>#{props.data.iteration}</span> : "#Insert Iteration"} </h4>
 				</span>
                 <div>
                     <h2 className="OPC" style={style.textStyle}>ONLINE PROGRAMMING CONTEST</h2>
+                </div>
+                <div style={{height: "10px"}}>
+
                 </div>
                 <div className="horizontal">
                     <h4 className="date"> {props.data.dateString ?
@@ -54,10 +57,15 @@ function Poster(props) {
                     <h4 className="time"> {props.data.timeTo ? props.data.timeTo :
                         <span style={{color: "red"}}>Add End Time</span>}&nbsp;IST</h4>
                 </div>
-                <div style={{"height": "60%", "width": "90%"}}>
+                <div style={{height:"10px"}}>
+
+                </div>
+                <div style={{"height": "60%", "width": "100%"}}>
                     {props.data.file === "" ? <div style={{margin: "20px"}} className={"alert alert-danger"}><h1
                             style={{margin: "auto"}}>Please Select Poster</h1></div> :
                         <img className="image" src={props.data.file} id="image" alt="Insert Poster"/>}
+                </div>
+                 <div style={{height:"10px"}}>
                 </div>
                 <span className="horizontal">
                     <img className="qr" src={props.data.qr} alt="QR Code"/>
@@ -67,26 +75,35 @@ function Poster(props) {
                         </div>
                         <p className={"contacts"}>
                         {props.data.contactList.length === 1 ?
-                            <div><span
-                                style={style.contactStyle.nameStyle}>{props.data.contactList[0].student}</span>: <span
-                                style={style.contactStyle.phoneNumberStyle}>{props.data.contactList[0].contact}</span>
+                            <div>
+                                <div><span
+                                    style={style.contactStyle.nameStyle}>{props.data.contactList[0].student}</span>: <span
+                                    style={style.contactStyle.phoneNumberStyle}>{props.data.contactList[0].contact}</span>
+                                </div>
+                                <div className={"divider"}>
+                                </div>
                             </div> : null}
                             {props.data.contactList.length === 2 ?
-                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact}  {props.data.contactList[1].student} : {props.data.contactList[1].contact}  </div> : null}
+                                <div>
+                                    <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact} {props.data.contactList[1].student} : {props.data.contactList[1].contact}
+                                        <div className={"divider"}>
+                                        </div>
+                                    </div>
+                                </div> : null}
                             {props.data.contactList.length === 3 ? <div>
-                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact}  {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
+                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact} {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
                                 <div className="divider"></div>
                                 <div>
                                     {props.data.contactList[2].student} : {props.data.contactList[2].contact}
                                 </div>
                             </div> : null}
                             {props.data.contactList.length === 4 ? <div>
-                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact}  {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
+                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact} {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
                                 <div className={"divider"}>
 
                                 </div>
                                 <div>
-                                    {props.data.contactList[2].student} : {props.data.contactList[2].contact}  {props.data.contactList[3].student} : {props.data.contactList[3].contact}
+                                    {props.data.contactList[2].student} : {props.data.contactList[2].contact} {props.data.contactList[3].student} : {props.data.contactList[3].contact}
                                 </div>
                             </div> : null}
                         </p>
