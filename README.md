@@ -4,7 +4,11 @@ React App to make Heuristics Poster
 
 [![Youtube Video](http://img.youtube.com/vi/wBMoR_fe6Kc/0.jpg)](http://www.youtube.com/watch?v=wBMoR_fe6Kc)
 
+## Deployed Online
+
+The heuristics poster maker has been deployed online by contributor @spiderxm
 [Visit Website](https://vigorous-lewin-245d57.netlify.app)
+
 ## Available Scripts
 
 In the project directory, you can run:
