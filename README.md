@@ -6,7 +6,7 @@ React App to make Heuristics Poster
 
 ## Deployed Online
 
-The heuristics poster maker has been deployed online by contributor @spiderxm
+The heuristics poster maker has been deployed online by contributor [@spiderxm](https://github.com/spiderxm/) <br/>
 [Visit Website](https://vigorous-lewin-245d57.netlify.app)
 
 ## Available Scripts
