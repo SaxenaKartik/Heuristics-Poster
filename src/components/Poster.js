@@ -62,7 +62,7 @@ function Poster(props) {
                 <span className="horizontal">
                     <img className="qr" src={props.data.qr} alt="QR Code"/>
 					<span className="vertical, link">
-                        <div>
+                        <div style={{marginBottom: "10px"}}>
                             {props.data.url ? props.data.url : "Insert Link"}
                         </div>
                         <p className={"contacts"}>
@@ -77,29 +77,19 @@ function Poster(props) {
                                 <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact} {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
                                 <div className="divider"></div>
                                 <div>
-                                    {props.data.contactList[2].student}: {props.data.contactList[2].contact}
+                                    {props.data.contactList[2].student} : {props.data.contactList[2].contact}
                                 </div>
                             </div> : null}
                             {props.data.contactList.length === 4 ? <div>
                                 <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact} {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
-                                <div className="divider"></div>
+                                <div className={"divider"}>
+
+                                </div>
                                 <div>
                                     {props.data.contactList[2].student}: {props.data.contactList[2].contact} {props.data.contactList[3].student}: {props.data.contactList[3].contact}
                                 </div>
                             </div> : null}
                         </p>
-
-                        {/*<div style={{marginTop: "10px"}}>*/}
-                        {/*    <span*/}
-                        {/*        className="contacts">{props.data.contactList.length === 1 || props.data.contactList.length === 2 || props.data.contactList.length === 3 || props.data.contactList.length === 4 ?*/}
-                        {/*        props.data.contactList.slice(0, 4).map((item) => <div*/}
-                        {/*            key={item.id}*/}
-                        {/*            style={{height: "20px"}}> &nbsp;*/}
-                        {/*            <p>{item.student} &nbsp;:&nbsp; {item.contact}</p></div>)*/}
-                        {/*        :*/}
-                        {/*        ""}*/}
-                        {/*    </span>*/}
-                        {/* </div>*/}
 					</span>
 				</span>
             </div>

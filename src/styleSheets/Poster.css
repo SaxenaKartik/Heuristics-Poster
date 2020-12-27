@@ -179,3 +179,9 @@ src: local('link'), url('../fonts/gligoth.ttf');
   margin-top: -15px;
   margin-bottom:  5px;
 }
+.divider{
+  background: grey;
+  margin-left: 30px;
+  border-radius: 10px;
+  height: 3px;
+}
