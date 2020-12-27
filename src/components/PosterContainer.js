@@ -107,22 +107,20 @@ function PosterContainer() {
         'contactList': contactList
     }
     const ComponentToPrint = React.forwardRef((props, ref) => (
-        <div ref={ref} className={"col"}>
+        <div ref={ref}>
             <Poster mode={mode} data={props.data} handleChange={props.handleChange}/>
         </div>
     ));
 
     const ref = createRef();
-    const style = {display: "flex", flexDirection: "row"}
     const buttonStyle = {marginRight: "10px", color: "white", backgroundColor: "black"};
-    const stylePoster = {width: "70%"}
     const contactInfoList = contactList.map(item => <ContactInformation key={item.id} data={item}
                                                                         contactAdd={contactAdd}/>)
     return (
         <div className={"container"}>
-            <div style={style}>
-                <div style={stylePoster}>
-                    <ComponentToPrint ref={ref} data={data} handleChange={handleChange}/>
+            <div className={"main"}>
+                <div  className={"poster"}>
+                    <ComponentToPrint ref={ref} data={data} handleChange={handleChange} />
                 </div>
                 <div className="row">
                     <div style={{fontFamily: "monospace", padding: "1rem"}}>

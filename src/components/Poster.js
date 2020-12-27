@@ -72,21 +72,21 @@ function Poster(props) {
                                 style={style.contactStyle.phoneNumberStyle}>{props.data.contactList[0].contact}</span>
                             </div> : null}
                             {props.data.contactList.length === 2 ?
-                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact} {props.data.contactList[1].student} : {props.data.contactList[1].contact}  </div> : null}
+                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact}  {props.data.contactList[1].student} : {props.data.contactList[1].contact}  </div> : null}
                             {props.data.contactList.length === 3 ? <div>
-                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact} {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
+                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact}  {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
                                 <div className="divider"></div>
                                 <div>
                                     {props.data.contactList[2].student} : {props.data.contactList[2].contact}
                                 </div>
                             </div> : null}
                             {props.data.contactList.length === 4 ? <div>
-                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact} {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
+                                <div> {props.data.contactList[0].student} : {props.data.contactList[0].contact}  {props.data.contactList[1].student} : {props.data.contactList[1].contact}</div>
                                 <div className={"divider"}>
 
                                 </div>
                                 <div>
-                                    {props.data.contactList[2].student}: {props.data.contactList[2].contact} {props.data.contactList[3].student}: {props.data.contactList[3].contact}
+                                    {props.data.contactList[2].student} : {props.data.contactList[2].contact}  {props.data.contactList[3].student} : {props.data.contactList[3].contact}
                                 </div>
                             </div> : null}
                         </p>
