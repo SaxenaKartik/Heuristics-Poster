@@ -16,6 +16,7 @@ function PosterContainer() {
     let [iteration, setIteration] = useState("")
     let [contacts, setContacts] = useState("")
     let [contactList, setContactList] = useState([])
+    let [mode,setMode] = useState("light")
 
 
     async function handleChange(event) {
@@ -107,7 +108,7 @@ function PosterContainer() {
     }
     const ComponentToPrint = React.forwardRef((props, ref) => (
         <div ref={ref} className={"col"}>
-            <Poster data={props.data} handleChange={props.handleChange}/>
+            <Poster mode={mode} data={props.data} handleChange={props.handleChange}/>
         </div>
     ));
 
@@ -137,10 +138,10 @@ function PosterContainer() {
                                 <h3>Enter Details</h3>
                             </div>
                             <br/>
-                            <PosterForm data={data} handleChange={handleChange}/>
+                            <PosterForm data={data} handleChange={handleChange} mode={mode} changemode={setMode}/>
                             {contactInfoList}
 
-                            <div className={"modal-footer"} style={{textAlign:"center"}}>
+                            <div className={"modal-footer"} style={{textAlign: "center"}}>
                                 <button className={"btn btn-dark"} style={buttonStyle}
                                         onClick={() => exportComponentAsJPEG(ref, data.iteration ? data.iteration : "poster")}>Generate
                                     JPEG

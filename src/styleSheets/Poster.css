@@ -154,7 +154,6 @@ src: local('link'), url('../fonts/gligoth.ttf');
   text-align: center;
   justify-content: center;
   font-size: 16px;
-  margin-top: -20px;
   margin-bottom: 0px;
 }
 

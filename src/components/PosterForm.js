@@ -1,10 +1,37 @@
 import React from 'react'
 import '../styleSheets/PosterForm.css'
+import Switch from "react-switch"
 
 function PosterForm(props) {
     return (
         <div className="formContainer">
             <form>
+                <div>
+                    <label>
+                        <label style={{display: "block"}}>Mode</label>
+                        <Switch
+                            checked={props.mode === "dark" ? true : false}
+                            onChange={(event) => {
+                                if (props.mode === "dark") {
+                                    props.changemode("light")
+                                }
+                                if (props.mode === "light") {
+                                    props.changemode("dark")
+                                }
+                            }}
+                            onColor="#000000"
+                            onHandleColor="grey"
+                            handleDiameter={30}
+                            uncheckedIcon={false}
+                            checkedIcon={false}
+                            boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                            activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                            height={20}
+                            width={48}
+                            className="react-switch"
+                            id="material-switch"
+                        /> </label>
+                </div>
                 <div className={"form-group"}>
                     <label className={"form-label"}>
                         Choose Image

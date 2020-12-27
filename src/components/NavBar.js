@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../images/0.png";
 
 const style = {
     navStyle: {
@@ -23,7 +22,7 @@ const style = {
 const NavBar = () => {
     return <nav style={style.navStyle}>
         <div>
-            <a className="navbar-brand" style={style.textStyle}>Design Poster For Heuristics</a>
+            <span className="navbar-brand" style={style.textStyle}>Design Poster For Heuristics</span>
         </div>
     </nav>;
 }
